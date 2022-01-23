@@ -26,7 +26,7 @@ export default {
     },
     placeholder: {
       type: String,
-      default: "Пойск",
+      default: "Search",
     },
     disabled: {
       type: Boolean,

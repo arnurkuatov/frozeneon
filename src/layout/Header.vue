@@ -1,7 +1,10 @@
 <template>
   <section class="search-bar">
-    <base-input id="1" v-model="searchText" type="search" />
-    <base-button @click="searchDelivr"> Пойск </base-button>
+    <h1>Find your desired package, Sir!</h1>
+    <div class="search-bar__block">
+      <base-input id="1" v-model="searchText" type="search" />
+      <base-button @click="searchDelivr"> Search </base-button>
+    </div>
   </section>
 </template>
 
@@ -31,8 +34,15 @@ export default {
 <style lang="scss" scoped>
 .search-bar {
   margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #1a1818;
+  }
+  &__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>

@@ -2,10 +2,10 @@
   <section class="home-page">
     <DataTable :packages="packagesDelivr.objects" />
     <div>
-      <h1 v-if="!packagesDelivr.objects">
+      <h2 v-if="!packagesDelivr.objects.length">
         THERE IS NO PACKAGES!!! <br />
         please try to search another package :)
-      </h1>
+      </h2>
     </div>
   </section>
 </template>
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style scoped>
-h1 {
+h2 {
   color: #e91e63;
   text-align: center;
 }
